@@ -17,17 +17,33 @@
     <div class="weather-search">
       <div class="container">
         <h1>Lagos</h1>
-        <ul>
-          <li>time 00:00</li>
-          <li>description</li>
-        </ul>
+        <div class="row">
+          <div class="col-6">
+            <ul>
+              <li>time 00:00</li>
+              <li>description</li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <form>
+              <input
+                type="text"
+                name="search-engine"
+                placeholder="type in city here..."
+              />
+              <input type="submit" value="search" class="btn-btn primary" />
+            </form>
+          </div>
+        </div>
         <div class="row">
           <div class="col-6">
             <img
               src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
               alt="img-tag"
             />
-            <span> <strong>12</strong>C| <a href="#">F</a> </span>
+            <span>
+              <strong class="temperature">12</strong>C| <a href="#">F</a>
+            </span>
           </div>
           <div class="col-6">
             <ul>
