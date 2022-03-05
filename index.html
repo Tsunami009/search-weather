@@ -10,18 +10,19 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
     <title>weather-search</title>
   </head>
   <body>
     <div class="weather-search">
       <div class="container">
-        <h1>Lagos</h1>
+        <h1 id="city">Lagos</h1>
         <div class="row">
           <div class="col-6">
             <ul>
-              <li>time 00:00</li>
-              <li>description</li>
+              <li id="current-time">time 00:00</li>
+              <li id="describe">description</li>
             </ul>
           </div>
           <div class="col-6">
@@ -29,6 +30,7 @@
               <input
                 type="text"
                 name="search-engine"
+                class="btn-btn primary"
                 placeholder="type in city here..."
               />
               <input type="submit" value="search" class="btn-btn primary" />
@@ -42,18 +44,18 @@
               alt="img-tag"
             />
             <span>
-              <strong class="temperature">12</strong>C| <a href="#">F</a>
+              <strong id="temperature">12</strong>°C| <a href="#">°F</a>
             </span>
           </div>
           <div class="col-6">
             <ul>
-              <li>humidity : 80%</li>
-              <li>wind : 2.KM/H</li>
+              <li>Humidity : <span id="humidity">80</span>%</li>
+              <li>Wind : <span id="wind">2</span>KM/H</li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    <link rel="stylesheet" href="src/app.js" />
+    <script src="src/app.js"></script>
   </body>
 </html>

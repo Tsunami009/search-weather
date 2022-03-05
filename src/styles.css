@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   border-radius: 5px;
+  padding-left: 10px;
 }
 li {
   color: rgb(112, 117, 122);
@@ -13,6 +14,8 @@ li {
   font-family: Arial, Helvetica, sans-serif;
   list-style: none;
   line-height: 17px;
+  padding-left: 0px;
+  margin: 0px;
 }
 .ul {
   padding: 0px;
@@ -28,10 +31,17 @@ h1 {
   font-style: bold;
   line-height: 26px;
   width: 326px;
-  padding-top: 4px;
+  padding-top: 6px;
+  padding-bottom: 7px;
+  padding-left: 10px;
 }
 .temperature {
   font-size: 30px;
   font-style: bold;
   font-weight: 600;
+}
+.ul {
+  padding-left: 0px;
+  margin: 0;
+  display: block;
 }
