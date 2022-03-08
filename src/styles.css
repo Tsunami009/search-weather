@@ -1,25 +1,24 @@
 .weather-search {
   border: 3px solid rgb(112, 117, 122);
-  max-width: 800px;
   margin: 0;
   padding: 0;
   border-radius: 5px;
   padding-left: 10px;
 }
 li {
-  color: rgb(112, 117, 122);
+  color: #70757a;
   display: block;
   font-weight: 200;
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
   list-style: none;
   line-height: 17px;
-  padding-left: 0px;
-  margin: 0px;
+  margin-left: 0px;
 }
 .ul {
-  padding: 0px;
+  padding-top: 5px;
   margin: 0;
+  padding-left: 0px;
 }
 h1 {
   color: rgb(32, 33, 36);
@@ -33,15 +32,22 @@ h1 {
   width: 326px;
   padding-top: 6px;
   padding-bottom: 7px;
-  padding-left: 10px;
+  padding-left: 5px;
+  margin-left: 4px;
 }
 .temperature {
   font-size: 30px;
   font-style: bold;
   font-weight: 600;
 }
-.ul {
+.container {
+  max-width: initial;
+  padding-right: 0px;
   padding-left: 0px;
-  margin: 0;
+  margin-left: 0px;
+}
+#no-margin {
   display: block;
+  margin-left: 0px;
+  padding-left: 0px;
 }

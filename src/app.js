@@ -37,8 +37,15 @@ function displayTemperature(response) {
   description.innerHTML = response.data.weather[0].description;
   let time = document.querySelector("#current-time");
   time.innerHTML = formatDate(response.data.dt * 1000);
+  let iconElement = document.querySelector("#icon");
+
+  iconElement.setAttribute(
+    "src",
+    "http://openweathermap.org/img/wn/10d@2x.png"
+  );
 }
+
 let apiKey = "60cf85a4c7dd6acab0cc7acb0029d770";
 let apiUrl =
-  "https://api.openweathermap.org/data/2.5/weather?q=lagos&appid=60cf85a4c7dd6acab0cc7acb0029d770&units=metric";
+  "https://api.openweathermap.org/data/2.5/weather?q=abuja&appid=60cf85a4c7dd6acab0cc7acb0029d770&units=metric";
 axios.get(apiUrl).then(displayTemperature);

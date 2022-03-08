@@ -15,33 +15,46 @@
     <title>weather-search</title>
   </head>
   <body>
+    <br />
     <div class="weather-search">
       <div class="container">
+        <br />
+        <form>
+          <div class="row">
+            <div class="col 9">
+              <input
+                type="text"
+                name="search-engine"
+                class="form-control"
+                placeholder="type in city here..."
+              />
+            </div>
+            <div class="col 3">
+              <input
+                type="submit"
+                id="submit"
+                value="search"
+                class="btn-btn primary"
+              />
+            </div>
+          </div>
+        </form>
         <h1 id="city">Lagos</h1>
         <div class="row">
           <div class="col-6">
-            <ul>
+            <ul id="no-margin">
               <li id="current-time">time 00:00</li>
               <li id="describe">description</li>
             </ul>
           </div>
-          <div class="col-6">
-            <form>
-              <input
-                type="text"
-                name="search-engine"
-                class="btn-btn primary"
-                placeholder="type in city here..."
-              />
-              <input type="submit" value="search" class="btn-btn primary" />
-            </form>
-          </div>
+          <div class="col-6"></div>
         </div>
         <div class="row">
           <div class="col-6">
             <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+              src="http://openweathermap.org/img/wn/10d@2x.png"
               alt="img-tag"
+              id="icon"
             />
             <span>
               <strong id="temperature">12</strong>°C| <a href="#">°F</a>
